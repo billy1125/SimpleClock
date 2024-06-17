@@ -55,10 +55,11 @@ namespace SimpleClock
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(14, 14);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(935, 537);
+            this.tabControl1.Size = new System.Drawing.Size(1052, 644);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -71,38 +72,43 @@ namespace SimpleClock
             this.tabPage1.Controls.Add(this.txtWeekDay);
             this.tabPage1.Controls.Add(this.txtDate);
             this.tabPage1.Controls.Add(this.txtTime);
-            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Location = new System.Drawing.Point(4, 45);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(927, 495);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1044, 595);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "時鐘";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnCancelAlert
             // 
-            this.btnCancelAlert.Location = new System.Drawing.Point(649, 282);
+            this.btnCancelAlert.Location = new System.Drawing.Point(730, 338);
+            this.btnCancelAlert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelAlert.Name = "btnCancelAlert";
-            this.btnCancelAlert.Size = new System.Drawing.Size(219, 65);
+            this.btnCancelAlert.Size = new System.Drawing.Size(246, 78);
             this.btnCancelAlert.TabIndex = 7;
             this.btnCancelAlert.Text = "關閉鬧鐘";
             this.btnCancelAlert.UseVisualStyleBackColor = true;
+            this.btnCancelAlert.Click += new System.EventHandler(this.btnCancelAlert_Click);
             // 
             // btnSetAlert
             // 
-            this.btnSetAlert.Location = new System.Drawing.Point(424, 282);
+            this.btnSetAlert.Location = new System.Drawing.Point(477, 338);
+            this.btnSetAlert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSetAlert.Name = "btnSetAlert";
-            this.btnSetAlert.Size = new System.Drawing.Size(219, 65);
+            this.btnSetAlert.Size = new System.Drawing.Size(246, 78);
             this.btnSetAlert.TabIndex = 6;
             this.btnSetAlert.Text = "設定鬧鐘";
             this.btnSetAlert.UseVisualStyleBackColor = true;
+            this.btnSetAlert.Click += new System.EventHandler(this.btnSetAlert_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(217, 300);
+            this.label1.Location = new System.Drawing.Point(244, 360);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 31);
+            this.label1.Size = new System.Drawing.Size(22, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = ":";
             // 
@@ -110,27 +116,30 @@ namespace SimpleClock
             // 
             this.cmbMin.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbMin.FormattingEnabled = true;
-            this.cmbMin.Location = new System.Drawing.Point(243, 297);
+            this.cmbMin.Location = new System.Drawing.Point(273, 356);
+            this.cmbMin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbMin.Name = "cmbMin";
-            this.cmbMin.Size = new System.Drawing.Size(146, 37);
+            this.cmbMin.Size = new System.Drawing.Size(164, 44);
             this.cmbMin.TabIndex = 4;
             // 
             // cmbHour
             // 
             this.cmbHour.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbHour.FormattingEnabled = true;
-            this.cmbHour.Location = new System.Drawing.Point(65, 297);
+            this.cmbHour.Location = new System.Drawing.Point(73, 356);
+            this.cmbHour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbHour.Name = "cmbHour";
-            this.cmbHour.Size = new System.Drawing.Size(146, 37);
+            this.cmbHour.Size = new System.Drawing.Size(164, 44);
             this.cmbHour.TabIndex = 3;
             // 
             // txtWeekDay
             // 
             this.txtWeekDay.Enabled = false;
             this.txtWeekDay.Font = new System.Drawing.Font("微軟正黑體", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtWeekDay.Location = new System.Drawing.Point(533, 179);
+            this.txtWeekDay.Location = new System.Drawing.Point(600, 215);
+            this.txtWeekDay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtWeekDay.Name = "txtWeekDay";
-            this.txtWeekDay.Size = new System.Drawing.Size(388, 87);
+            this.txtWeekDay.Size = new System.Drawing.Size(436, 103);
             this.txtWeekDay.TabIndex = 2;
             this.txtWeekDay.Text = "禮拜幾";
             this.txtWeekDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,9 +148,10 @@ namespace SimpleClock
             // 
             this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("微軟正黑體", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDate.Location = new System.Drawing.Point(6, 179);
+            this.txtDate.Location = new System.Drawing.Point(7, 215);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(521, 87);
+            this.txtDate.Size = new System.Drawing.Size(586, 103);
             this.txtDate.TabIndex = 1;
             this.txtDate.Text = "日期";
             this.txtDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -150,28 +160,31 @@ namespace SimpleClock
             // 
             this.txtTime.Enabled = false;
             this.txtTime.Font = new System.Drawing.Font("微軟正黑體", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtTime.Location = new System.Drawing.Point(6, 6);
+            this.txtTime.Location = new System.Drawing.Point(7, 7);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(915, 167);
+            this.txtTime.Size = new System.Drawing.Size(1029, 199);
             this.txtTime.TabIndex = 0;
             this.txtTime.Text = "00:00:00";
             this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Location = new System.Drawing.Point(4, 45);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(927, 495);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1044, 595);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "碼表";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Location = new System.Drawing.Point(4, 45);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(927, 495);
+            this.tabPage3.Size = new System.Drawing.Size(1044, 595);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "倒數";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -180,13 +193,18 @@ namespace SimpleClock
             // 
             this.timerClcok.Tick += new System.EventHandler(this.timerClcok_Tick);
             // 
+            // timerAlert
+            // 
+            this.timerAlert.Tick += new System.EventHandler(this.timerAlert_Tick);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 561);
+            this.ClientSize = new System.Drawing.Size(1079, 673);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "簡易時鐘";
             this.tabControl1.ResumeLayout(false);
